@@ -8,7 +8,7 @@ public class MainMenueButtonManager : MonoBehaviour
     public void StartGamePressed()
     {
         Debug.Log($"{Pressed("Play")}");
-        SceneManager.LoadScene(gameSceneName);
+        SceneManager.LoadSceneAsync(1);
     }
 
     public void OptionsPressed()
