@@ -5,6 +5,7 @@ TagManager:
   serializedVersion: 2
   tags:
   - Swamp
+  - TallGrass
   layers:
   - Default
   - TransparentFX
@@ -45,6 +46,30 @@ TagManager:
   - name: Ground
     uniqueID: 3925883027
     locked: 0
+  - name: Water
+    uniqueID: 864963229
+    locked: 0
   - name: Swamp
     uniqueID: 2315362877
+    locked: 0
+  - name: Tall Grass
+    uniqueID: 421598793
+    locked: 0
+  - name: WalkInFront
+    uniqueID: 1790892967
+    locked: 0
+  - name: Collision
+    uniqueID: 223760275
+    locked: 0
+  - name: Collision Trigger
+    uniqueID: 2983547703
+    locked: 0
+  - name: Player
+    uniqueID: 3892189439
+    locked: 0
+  - name: Walkbehind
+    uniqueID: 1664505287
+    locked: 0
+  - name: Decor
+    uniqueID: 1755902571
     locked: 0
