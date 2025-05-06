@@ -43,14 +43,14 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
-  - name: Water
-    uniqueID: 864963229
-    locked: 0
   - name: Ground
     uniqueID: 3925883027
     locked: 0
   - name: Path
     uniqueID: 3066597027
+    locked: 0
+  - name: Water
+    uniqueID: 864963229
     locked: 0
   - name: Houses
     uniqueID: 1768739879
@@ -69,6 +69,9 @@ TagManager:
     locked: 0
   - name: Collision Trigger
     uniqueID: 2983547703
+    locked: 0
+  - name: Stairs
+    uniqueID: 3601592925
     locked: 0
   - name: Player
     uniqueID: 3892189439
