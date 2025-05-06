@@ -63,9 +63,9 @@ public class PlayerMovements : MonoBehaviour
         
     }
 
-    private void OnTriggerEnter2D(Collider2D collision)
+    private void OnTriggerEnter2D(Collider2D col)
     {
-        if (collision.gameObject.CompareTag("FightEncounter"))
+        if (col.gameObject.CompareTag("FightEncounter"))
         {
             //CheckForEncouter();
         }
@@ -76,6 +76,10 @@ public class PlayerMovements : MonoBehaviour
         if (col.gameObject.CompareTag("Swamp"))
         {
             isSlowed = true;
+        }
+        if (col.gameObject.CompareTag("TallGrass"))
+        { 
+            //      
         }
         else
         {
