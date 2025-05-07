@@ -73,12 +73,15 @@ TagManager:
   - name: Stairs
     uniqueID: 3601592925
     locked: 0
+  - name: Decor Front
+    uniqueID: 1755902571
+    locked: 0
   - name: Player
     uniqueID: 3892189439
     locked: 0
   - name: Walkbehind
     uniqueID: 1664505287
     locked: 0
-  - name: Decor
-    uniqueID: 1755902571
+  - name: DecorBehind
+    uniqueID: 2199174819
     locked: 0
