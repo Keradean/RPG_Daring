@@ -13,6 +13,7 @@ public class PlayerMovements : MonoBehaviour
     private Animator animator;
     [Range(0,1)][SerializeField] private float slowedFactor;
     private bool isSlowed;
+    
 
     private void Awake()
     {
@@ -47,11 +48,16 @@ public class PlayerMovements : MonoBehaviour
     {
         movementInput = playerControls.ReadValue<Vector2>();
 
-        if (movementInput.x != 0 || movementInput.y != 0 ) {           
-            animator.SetFloat("x", movementInput.x);
-            animator.SetFloat("y", movementInput.y);
+        bool isMoving = movementInput.x != 0 || movementInput.y != 0;
+        animator.SetBool("movementInput", isMoving);
+
+        if (isMoving)
+        {
+            animator.SetFloat("X", movementInput.x);
+            animator.SetFloat("Y", movementInput.y);
         }
     }
+
     private void FixedUpdate()
     {
         //var actuallMovementSpeed = isSlowed ? movementSpeed * slowedFactor : movementSpeed;
