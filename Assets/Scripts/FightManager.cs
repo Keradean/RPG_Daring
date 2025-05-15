@@ -24,7 +24,7 @@ public class FightManager : MonoBehaviour
         isFightActive = false;
     }
 
-    public bool CheckForEncounter()
+    public bool CheckForEncounter(PlayerMovements playerMovements)
     {
         if (Random.Range(0, 100) < chanceToEncounter)
         {

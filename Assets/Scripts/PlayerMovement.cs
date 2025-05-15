@@ -2,19 +2,35 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using UnityEngine.Tilemaps;
 using static UnityEngine.InputSystem.InputAction;
 
 //BaseCharacter is the base of a character
 public class PlayerMovements : MonoBehaviour
 {
     private Vector2 movementInput;
-    public InputAction playerControls;
     [SerializeField] private float movementSpeed;
-    private Animator animator;
     [Range(0,1)][SerializeField] private float slowedFactor;
     private bool isSlowed;
+    private bool isPlayerPaused; 
+    public InputAction playerControls;
+    private Vector3Int currentPosition;
+    private Vector3Int lastEncounterPosition;
+    private Animator animator;
     
 
+    /// <summary>
+    /// returns the first found Tilemap in the scene (!!make sure all Tilemaps have the same Transform!!)
+    /// </summary>
+    public Tilemap tilemap
+    {
+        get
+        {
+            if (m_tilemap == null) m_tilemap = FindObjectOfType< Tilemap>();
+            return m_tilemap; 
+        }
+    }
+    private Tilemap m_tilemap;
     private void Awake()
     {
        animator = GetComponent<Animator>();
@@ -22,6 +38,7 @@ public class PlayerMovements : MonoBehaviour
     private void Start()
     {
         isSlowed = false;
+        isPlayerPaused = false;
     }
 
     /// <summary>
@@ -71,10 +88,7 @@ public class PlayerMovements : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D col)
     {
-        if (col.gameObject.CompareTag("FightEncounter"))
-        {
-            //CheckForEncouter();
-        }
+        
     }
 
     private void OnTriggerStay2D(Collider2D col)
@@ -83,13 +97,13 @@ public class PlayerMovements : MonoBehaviour
         {
             isSlowed = true;
         }
-        if (col.gameObject.CompareTag("TallGrass"))
-        { 
-            //      
-        }
-        else
+        else if (col.gameObject.CompareTag("FightEncounter"))
         {
-            Debug.LogError("Unknown trigger: " + col.gameObject.name);
+            if (currentPosition != lastEncounterPosition)
+            {
+                lastEncounterPosition = currentPosition;
+                PausePlayer(FightManager.Instance.CheckForEncounter(this));
+            }
         }
     }
     private void OnTriggerExit2D(Collider2D col)
@@ -98,5 +112,10 @@ public class PlayerMovements : MonoBehaviour
         {
             isSlowed = false;
         }
+    }
+
+    public void PausePlayer(bool isPaused)
+    {
+       isPlayerPaused = isPaused;
     }
 }
