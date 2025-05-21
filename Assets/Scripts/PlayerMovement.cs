@@ -13,10 +13,12 @@ public class PlayerMovements : MonoBehaviour
     [Range(0,1)][SerializeField] private float slowedFactor;
     private bool isSlowed;
     private bool isPlayerPaused; 
+    private bool isSprinting;
     public InputAction playerControls;
     private Vector3Int currentPosition;
     private Vector3Int lastEncounterPosition;
     private Animator animator;
+    public InputAction sprintAction;
     
 
     /// <summary>
@@ -64,6 +66,7 @@ public class PlayerMovements : MonoBehaviour
     private void Update()
     {
         movementInput = playerControls.ReadValue<Vector2>();
+        isSprinting = sprintAction.ReadValue<float>() > 0; //check if sprinting is pressed
 
         bool isMoving = movementInput.x != 0 || movementInput.y != 0;
         animator.SetBool("movementInput", isMoving);
@@ -73,13 +76,24 @@ public class PlayerMovements : MonoBehaviour
             animator.SetFloat("X", movementInput.x);
             animator.SetFloat("Y", movementInput.y);
         }
+        animator.SetBool("isSprinting", isSprinting); //set animator to sprinting
     }
 
     private void FixedUpdate()
     {
+        float actualMovementSpeed = movementSpeed;
         //var actuallMovementSpeed = isSlowed ? movementSpeed * slowedFactor : movementSpeed;
-        var actualMovementSpeed = movementSpeed;
-        if(isSlowed) actualMovementSpeed *= slowedFactor;
+        
+        if(isSlowed) 
+           actualMovementSpeed *= slowedFactor;
+
+        if (isSprinting && !isSlowed)
+            actualMovementSpeed *= 1.5f; 
+
+
+
+
+
 
         transform.Translate(new Vector3(movementInput.x, movementInput.y, 0) * Time.deltaTime * actualMovementSpeed);
 
