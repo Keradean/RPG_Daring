@@ -1,7 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+/*
 public class CharacterStatsManager : MonoBehaviour
 {
     public static CharacterStatsManager instance; { get; private set; }
@@ -36,3 +36,4 @@ public class CharacterStatsManager : MonoBehaviour
         }
     }
 }
+*/
