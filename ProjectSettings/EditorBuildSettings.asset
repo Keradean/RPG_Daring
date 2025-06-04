@@ -20,4 +20,6 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Treasure cave.unity
     guid: 5eacfef372cb66645a09f17fee06c411
-  m_configObjects: {}
+  m_configObjects:
+    com.unity.input.settings.actions: {fileID: -944628639613478452, guid: e6de7e1c3c641844d83523d3dffe27c9,
+      type: 3}
