@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Swamp
   - FightEncounter
+  - Chest
   layers:
   - Default
   - TransparentFX
