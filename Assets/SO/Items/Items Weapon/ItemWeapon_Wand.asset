@@ -1,0 +1,26 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9cf8f2bc1e93c7343a7c696e61ec9bc2, type: 3}
+  m_Name: ItemWeapon_Wand
+  m_EditorClassIdentifier: 
+  ID: Wand
+  Name: Emberling Wand
+  Icon: {fileID: 1816479545, guid: d1c2f46ba8dec974c937cd05d3e49d9c, type: 3}
+  Description: "Forged from scorched birchwood and bound with a glowing ember core,
+    this beginner\u2019s wand channels gentle flickers of flame. While its power
+    is limited, it\u2019s perfect for learning the art of fire magic without burning
+    down the academy. Warm to the touch and eager to ignite."
+  ItemType: 0
+  IsConsumable: 0
+  IsStackable: 0
+  MaxStack: 1
+  Quantity: 0

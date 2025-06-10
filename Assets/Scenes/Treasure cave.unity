@@ -1240,8 +1240,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 816b9f37d5b9e414d8a1dbefd0cd0e3e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  image: {fileID: 497230832}
-  originalParent: {fileID: 0}
 --- !u!114 &497230832
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7651,8 +7649,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 816b9f37d5b9e414d8a1dbefd0cd0e3e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  image: {fileID: 1347349117}
-  originalParent: {fileID: 0}
 --- !u!114 &1347349117
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7823,7 +7819,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f54611c83dbb4e1418590a2ffbe4182e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  movementSpeed: 3
+  movementSpeed: 2.96
   slowedFactor: 0.275
   playerControls:
     m_Name: Player Controls
@@ -8857,8 +8853,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 816b9f37d5b9e414d8a1dbefd0cd0e3e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  image: {fileID: 1492193423}
-  originalParent: {fileID: 0}
 --- !u!114 &1492193423
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11286,8 +11280,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 816b9f37d5b9e414d8a1dbefd0cd0e3e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  image: {fileID: 1928442506}
-  originalParent: {fileID: 0}
 --- !u!114 &1928442506
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11522,7 +11514,7 @@ TilemapRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 1664505287
-  m_SortingLayer: 12
+  m_SortingLayer: 13
   m_SortingOrder: 0
   m_ChunkSize: {x: 32, y: 32, z: 32}
   m_ChunkCullingBounds: {x: 0, y: 0, z: 0}
@@ -13646,7 +13638,7 @@ TilemapRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -2095792477
-  m_SortingLayer: 13
+  m_SortingLayer: 14
   m_SortingOrder: 0
   m_ChunkSize: {x: 32, y: 32, z: 32}
   m_ChunkCullingBounds: {x: 0, y: 0, z: 0}

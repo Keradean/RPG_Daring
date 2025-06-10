@@ -1,0 +1,28 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9cf8f2bc1e93c7343a7c696e61ec9bc2, type: 3}
+  m_Name: ItemWeapon_Sword
+  m_EditorClassIdentifier: 
+  ID: Sword
+  Name: Woodspire
+  Icon: {fileID: -961275042, guid: d1c2f46ba8dec974c937cd05d3e49d9c, type: 3}
+  Description: 'Woodspire is a simple sword, crafted from hardened, magical wood.
+    Despite its natural origin, it holds surprising resilience. It grows with its
+    wielder,
+
+    not in strength, but in significance. Ideal for those who begin
+    their journey in harmony with nature.'
+  ItemType: 0
+  IsConsumable: 0
+  IsStackable: 0
+  MaxStack: 1
+  Quantity: 0

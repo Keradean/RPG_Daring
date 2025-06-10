@@ -1,0 +1,26 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9cf8f2bc1e93c7343a7c696e61ec9bc2, type: 3}
+  m_Name: ItemWeapon_Bow
+  m_EditorClassIdentifier: 
+  ID: Bow
+  Name: "Beginner\u2019s Wooden Bow"
+  Icon: {fileID: 1836948395, guid: d1c2f46ba8dec974c937cd05d3e49d9c, type: 3}
+  Description: "A basic bow made from sturdy yew wood, favored by novice archers.
+    It\u2019s lightweight, easy to handle, and reliable enough for training or small
+    hunts. While it lacks enchantments or flair, its simplicity makes it the perfect
+    tool for mastering the fundamentals."
+  ItemType: 0
+  IsConsumable: 0
+  IsStackable: 0
+  MaxStack: 1
+  Quantity: 0
